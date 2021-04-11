@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>MyFit Team</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!-- MI CSS -->
+  <link rel="stylesheet" href="style3.css">
+  <!-- Barra de desplazamiento personalizada CSS -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+  <!-- ICONOS Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous">
+  </script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+    integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous">
+  </script>
+  <!-- Datatable -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+
+
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <nav id="sidebar">
+      <div id="dismiss">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <div class="sidebar-header">
+        <h3>MyFit Team</h3>
+      </div>
+
+      <img src="./img/jolu.jpg" alt="" class="img__perfil">
+      <ul class="list-unstyled components">
+        <p>Jorge Luis Ramos Nolasco</p>
+        <li class="active">
+          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+        </li>
+        <li>
+          <a href="cliente.html">Cliente</a>
+        </li>
+        <li>
+          <a href="trabajador.html">Empleado</a>
+        </li>
+        <li>
+          <a href="ofertas.html">Ofertas</a>
+        </li>
+        <li>
+          <a href="venta.html">Venta</a>
+        </li>
+      </ul>
+
+    </nav>
+
+    <!-- CONTENEDOR  -->
+    <div id="content">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+          <button type="button" id="sidebarCollapse" class="btn hambur">
+            <i class="fas fa-align-left"></i>
+          </button>
+          <button class="btn hambur-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fas fa-align-justify"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+
+              <form class="d-flex mt-3">
+                <li class="nav-item active mr-3">
+                  <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                </li>
+                <li class="nav-item active">
+                  <button class="btn hambur" type="submit">Buscar</button>
+                </li>
+              </form>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid">
+        <div class="row">
+          <h1>Ofertas</h1>
+          <div class="table_responsiva">
+            <table id="table_id" class="display">
+              <thead>
+                <tr>
+                  <th>Id Oferta</th>
+                  <th>DNI</th>
+                  <th>Primer Nombre</th>
+                  <th>Segundo Nombre</th>
+                  <th>Apellido Paterno</th>
+                  <th>Apellido Materno</th>
+                  <th>Día Ofertado</th>
+                  <th>Hora Ofertada</th>
+                  <th>Costo</th>
+                  <th>Mantenimiento</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>85412365</td>
+                  <td>Jorge</td>
+                  <td>Luis</td>
+                  <td>Ramos</td>
+                  <td>Nolasco</td>
+                  <td>10/04/2021</td>
+                  <td>2:00 pm a 4:00 pm</td>
+                  <td>S/. 50</td>
+                  <td><button type="button" class="btn hambur" data-toggle="modal" data-target="#exampleModal"><i
+                        class="fas fa-pencil-alt"></i></button> <button type="button" class="btn btn-outline-danger"><i
+                        class="fas fa-trash-alt"></i></button></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>85412365</td>
+                  <td>Jorge</td>
+                  <td>Luis</td>
+                  <td>Ramos</td>
+                  <td>Nolasco</td>
+                  <td>10/04/2021</td>
+                  <td>2:00 pm a 4:00 pm</td>
+                  <td>S/. 50</td>
+                  <td><button type="button" class="btn hambur" data-toggle="modal" data-target="#exampleModal"><i
+                        class="fas fa-pencil-alt"></i></button> <button type="button" class="btn btn-outline-danger"><i
+                        class="fas fa-trash-alt"></i></button></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>85412365</td>
+                  <td>Jorge</td>
+                  <td>Luis</td>
+                  <td>Ramos</td>
+                  <td>Nolasco</td>
+                  <td>10/04/2021</td>
+                  <td>2:00 pm a 4:00 pm</td>
+                  <td>S/. 50</td>
+                  <td><button type="button" class="btn hambur" data-toggle="modal" data-target="#exampleModal"><i
+                        class="fas fa-pencil-alt"></i></button> <button type="button" class="btn btn-outline-danger"><i
+                        class="fas fa-trash-alt"></i></button></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>85412365</td>
+                  <td>Jorge</td>
+                  <td>Luis</td>
+                  <td>Ramos</td>
+                  <td>Nolasco</td>
+                  <td>10/04/2021</td>
+                  <td>2:00 pm a 4:00 pm</td>
+                  <td>S/. 50</td>
+                  <td><button type="button" class="btn hambur" data-toggle="modal" data-target="#exampleModal"><i
+                        class="fas fa-pencil-alt"></i></button> <button type="button" class="btn btn-outline-danger"><i
+                        class="fas fa-trash-alt"></i></button></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>85412365</td>
+                  <td>Jorge</td>
+                  <td>Luis</td>
+                  <td>Ramos</td>
+                  <td>Nolasco</td>
+                  <td>10/04/2021</td>
+                  <td>2:00 pm a 4:00 pm</td>
+                  <td>S/. 50</td>
+                  <td><button type="button" class="btn hambur" data-toggle="modal" data-target="#exampleModal"><i
+                        class="fas fa-pencil-alt"></i></button> <button type="button" class="btn btn-outline-danger"><i
+                        class="fas fa-trash-alt"></i></button></td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>85412365</td>
+                  <td>Jorge</td>
+                  <td>Luis</td>
+                  <td>Ramos</td>
+                  <td>Nolasco</td>
+                  <td>10/04/2021</td>
+                  <td>2:00 pm a 4:00 pm</td>
+                  <td>S/. 50</td>
+                  <td><button type="button" class="btn hambur" data-toggle="modal" data-target="#exampleModal"><i
+                        class="fas fa-pencil-alt"></i></button> <button type="button" class="btn btn-outline-danger"><i
+                        class="fas fa-trash-alt"></i></button></td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>85412365</td>
+                  <td>Jorge</td>
+                  <td>Luis</td>
+                  <td>Ramos</td>
+                  <td>Nolasco</td>
+                  <td>10/04/2021</td>
+                  <td>2:00 pm a 4:00 pm</td>
+                  <td>S/. 50</td>
+                  <td><button type="button" class="btn hambur" data-toggle="modal" data-target="#exampleModal"><i
+                        class="fas fa-pencil-alt"></i></button> <button type="button" class="btn btn-outline-danger"><i
+                        class="fas fa-trash-alt"></i></button></td>
+                </tr>
+
+
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Modal -->
+          <div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog"
+            aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Mantenimiento de Ofertas</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="input__DNI">DNI</label>
+                        <input type="text" class="form-control" id="input__DNI" placeholder="Ejm: 84512754">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="input_Nombre">Primer Nombre</label>
+                        <input type="text" class="form-control" id="input_Nombre" placeholder="Ejm: Jorge">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="input__SegNombre">Segundo Nombre</label>
+                        <input type="text" class="form-control" id="input__SegNombre" placeholder="Ejm: Luis">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="input_ApPaterno">Apellido Paterno</label>
+                        <input type="text" class="form-control" id="input_ApPaterno" placeholder="Ejm: Ramos">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="input__ApMaterno">Apellido Materno</label>
+                        <input type="text" class="form-control" id="input__ApMaterno" placeholder="Ejm: Nolasco">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="input_DiaOfertado">Día Ofertado</label>
+                        <input type="date" class="form-control" id="input_DiaOfertado" placeholder="Ejm: 10/04/2021">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="input_HoraOfert">Hora de Inicio</label>
+                        <input type="time" class="form-control" id="input_HoraOfert" placeholder="Ejm: 13:45:00">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="input__Costo">Costo</label>
+                        <input type="text" class="form-control" id="input__Costo" placeholder="Ejm: S/. 13:00">
+                      </div>
+                    </div>
+                    <small>Nota: Son dos horas la duración del servicio por cada oferta.</small><br />
+                    <small>Ejm: Si la Hora de Inicio es 13:00 duraría hasta las 15:00</small>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn hambur"><i class="fas fa-save"></i> Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MODAL FIN -->
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+    integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous">
+  </script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+    integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
+  </script>
+  <!-- jQuery Scroller CDN -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+  </script>
+  <!-- datatable -->
+  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js">
+  </script>
+  <!-- datatable -->
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#table_id').DataTable({
+        "searching": false,
+      });
+
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#dismiss, .overlay').on('click', function () {
+        $('#sidebar').removeClass('active');
+        $('.overlay').removeClass('active');
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar').addClass('active');
+        $('.overlay').addClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+
+</html>
