@@ -8,11 +8,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    
     <title>Document</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light text-white navbar__princi">
+    <nav class="navbar navbar-expand-lg navbar-light text-white navbar__princi sticky-top">
         <a class="navbar-brand text-white" href="#">My<span class="text-warning">MFT H4L</span> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,16 +46,105 @@
 
         </div>
     </nav>
-    <main class="main__cont">
-        <div class="container">
-            <h1 class="text-xl-center pt-3 pb-3">NUESTRAS ESPECIALIDADES</h1>
-        
+    <main class="container-fluid main__cont">
+        <div class="">
+            <h2 class="text-xl-center pt-3 pb-3 text-white">NUESTRAS ESPECIALIDADES</h2>
+            <!-- Slider main container -->
+            <section class="swiper__sect">
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <span class="align-top">Muay Thai</span>
+                            <img src="imagenes/muaytai.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <span>Muay Thai</span>
+                            <img src="imagenes/flexiones.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <span>Muay Thai</span>
+                            <img src="imagenes/nutricion.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </section>
+            <h2 class="text-xl-center pt-3 pb-3 text-white">NUESTRAS ESPECIALIDADES</h2>
+            <div class="row mb-3">
+                <div class="col-6 col-md-4 d-flex justify-content-center carta">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="imagenes/nutri.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Jorge Lazo</h5>
+                            <p class="card-text">Rating: <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                            <p class="card-text">Especialidad: Brazos</p>
+                            <a href="#" class="btn btn-warning">Ver horarios</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-6 col-md-4 d-flex justify-content-center carta">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="imagenes/entrenador.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Victor Silva</h5>
+                            <p class="card-text">Rating: <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                            <p class="card-text">Especialidad: Nutricionista</p>
+                            <a href="#" class="btn btn-warning">Ver horarios</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-6 col-md-4 d-flex justify-content-center carta">
+                    <div class="card" style="width: 18rem;">    
+                        <img class="card-img-top" src="imagenes/entrenadora.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Olenka Sánchez</h5>
+                            <p class="card-text">Rating: <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
+                            <p class="card-text">Especialidad: Piernas</p>
+                            <a href="#" class="btn btn-warning text-center">Ver horarios</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+
         </div>
     </main>
+    <footer class="d-flex justify-content-between container-fluid align-items-center">
+        <section class="ml-5">
+            <p class="text-lg-center">Contacto</p>
+            <p class="email"><i class="far fa-envelope"></i> mfthabits4life@gmail.com</p>
+            <p class="tele"><i class="fas fa-phone-alt"></i> +51 987 654 321</p>
+        </section>
+        <section>
+            <a class="navbar-brand text-dark footer__myft" href="#">My<span class="text-warning">MFT H4L</span> </a>
+        </section>
+        <section class="mr-5 redes_soci">
+            <p><i class="fab fa-twitter"></i></p>
+            <p><i class="fab fa-instagram"></i></p>
+            <p><i class="fab fa-facebook"></i></p>
+        </section>
+    </footer>
 
 
 
 
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -62,7 +155,32 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 30,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickeable: true
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
+
 </body>
 
 </html>

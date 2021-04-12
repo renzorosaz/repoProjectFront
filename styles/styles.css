@@ -20,6 +20,36 @@ padding:0;
     width: 100px;
     border-radius: 5px;
 }
+.btn__link:hover{
+    cursor: pointer;
+}
 .main__cont{
     background-color: #c3c3c3;
+    padding-bottom: 20px ;
+}
+.swiper__sect{
+    padding: 30px 0px;
+    background-color: #F6EED8;
+}
+.swiper-container{
+    height: 300px;
+    
+}
+.swiper-slide{
+    background-color: #ccc;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.redes_soci{
+    display: flex;
+    gap: 30px;
+}
+.email,.tele{
+    margin-top: -15px;
+}
+.carta{
+    padding: 5px;
 }
