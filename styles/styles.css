@@ -53,3 +53,13 @@ padding:0;
 .carta{
     padding: 5px;
 }
+.formu{
+    height: 80vh;
+    padding: 100px;
+}
+.btn__canceenviar{
+    width: 200px;
+}
+.div__btn{
+    gap: 100px;
+}
