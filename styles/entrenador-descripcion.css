@@ -1,0 +1,337 @@
+*{
+margin:0;
+box-sizing:border-box;
+padding:0;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One:400|Roboto:400,400italic,700);
+
+body {
+    background-image: url(../img/background.png);
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+}
+.container__inside {
+    color: white;
+    padding-top: 50px;
+    background-color: rgba(139, 139, 139, 0.2);
+    width: 1348px;
+    height: 1296px;
+
+}
+
+.nav-bar{
+    gap:50%;
+}
+.lista-navbar{
+    gap: 15px;
+}
+
+.data1 {
+    margin-top: 60px;
+}
+
+.yellow {
+    color: #FEC600;
+}
+
+.title_user {
+    text-align: center;
+}
+
+.title_user::before,
+.title_user::after{
+    background-color: rgba(238, 238, 238, 0.856);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 400px;
+    transition: width 0.3 linear;
+}
+.title_user::before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  .title_user::after {
+    left: 0.5em;
+    margin-right: -50%;
+    background-color: #FEC600;
+  }
+
+.row {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.info__descripcion {
+    background: rgba(139, 139, 139, 0.411);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 25px;
+    font-size: 18px;
+    text-align: justify;
+    width: 600px;
+    transition: width 0.3s linear;
+}
+
+.info__title {
+    font-size: 24px;
+    transition: font-size 0.3s linear;
+}
+
+.info__title::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    color: #FEC600;
+    padding-right: 20px;
+
+}
+
+.flexvideo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.flexDatos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -20px;
+
+}
+
+.calendario {
+    margin-top: -50px;
+
+}
+.data2{
+    font-size: 20px;
+    padding-top: 40px;
+    
+   
+}
+.icono_contacto{
+    color: #FEC600;
+    margin-right: 30px;
+}
+.footer__contacto{
+    color: rgba(255, 255, 255, 0.836);
+}
+.footer__logo{
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 25px;
+}
+.card-footer{
+    display: flex;                    
+    background-color: rgba(139, 139, 139, 0.2);
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.footer__social{
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 30px;
+    display: flex;
+    gap: 40px;
+}
+.botones{
+    margin-top: 160px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 200px;
+    transition: margin-top 0.3s linear;
+}
+.btn-warning{
+    width: 200px;
+}
+.iconno{
+    padding-right: 30px;
+}
+.redondear{
+    border-radius: 25px;
+
+}
+.fadeIn{
+    transition: displa 0.3s linear;
+    box-shadow: 0px 0px 20px #FEC600;
+}
+.jzdbox1 {
+  width:315px; 
+  background:#332f2e; 
+  border-radius:5px; 
+  overflow:hidden; 
+  display:block; 
+  margin-bottom:10px; 
+  box-shadow:0 0 10px #201d1c; 
+  margin:0 auto; 
+  margin-top:100px;
+  box-shadow: 0px 0px 20px #FEC600;
+}
+
+.jzdcal {
+  padding:0 10px 20px 30px; 
+  box-sizing:border-box!important; 
+  background:#749d9e; 
+  background: -webkit-linear-gradient(#2e2e2e, #b3a68b)!important; 
+  background: -o-linear-gradient(#2e2e2e, #b3a68b)!important; 
+  background: -moz-linear-gradient(#2e2e2e, #b3a68b)!important; 
+  background: linear-gradient(#2e2e2e, #b3a68b)!important;
+}
+
+.jzdcalt {
+  font:25px 'Roboto'; 
+  font-weight:700; 
+  color:#f7f3eb; 
+  display:block; 
+  margin:18px 0 0 0; 
+  text-transform:uppercase; 
+  text-align:center; 
+  letter-spacing:1px;
+}
+
+.jzdcal span {
+  font:16px 'Roboto'; 
+  font-weight:400; 
+  color:#f7f3eb; 
+  text-align:center; 
+  width:42px; 
+  height:42px; 
+  display:inline-block; 
+  float:left; 
+  overflow:hidden; 
+  line-height:40px;
+}
+
+.jzdcal .jzdb:before {
+  opacity:0.3; 
+  content:'o';
+}
+
+.circle {
+  border:1px solid #f7f3eb; 
+  box-sizing:border-box!important; 
+  border-radius:200px!important;
+}
+
+span[data-title]:hover:after, 
+div[data-title]:hover:after {
+  font:11px 'Roboto'; 
+  font-weight:400; 
+  content:attr(data-title); 
+  position:absolute; 
+  margin:0 0 100px; 
+  background:#282423; 
+  border:1px solid #f7f3eb; 
+  color:#f7f3eb; 
+  padding:5px; 
+  z-index:9999; 
+  min-width:150px; 
+  max-width:150px;
+}
+
+@media (max-width: 1350px) {
+    .info__descripcion {
+        width: 450px;
+    }
+    .botones{
+        margin-top: 60px;
+    }
+    .title_user::before,
+    .title_user::after{
+       
+        width: 250px;
+        
+    }
+   
+}  
+
+@media (max-width: 1350px) {
+  
+    .botones{
+        margin-top: 60px;
+        gap: 100px;
+    }
+    .flexvideo{
+        margin-top: -100px;
+    }
+   
+   
+@media (max-width: 768px) {
+  
+    .botones{
+        margin-top: 100px;
+        gap: 25px;
+        flex-direction: column;
+    }
+    .fadeIn{
+        display: none;
+    }
+    .data1:nth-child(1),.data1:nth-child(2){
+        display: none;
+    }
+    .data2 > .info__descripcion:nth-child(1),data2 > .info__descripcion:nth-child(2){
+        display: none;
+    }
+    .footer__contacto{
+        display: none;
+    }
+    .footer__logo{
+        display: none;
+    }
+    .card-footer{
+       
+        justify-content: center;
+      
+    }
+    .title_user{
+        font-size: 30px;
+    }
+    .info__descripcion{
+        width: 370px;
+    }
+    .flexvideo h2{
+        display: none;
+    }
+    .title_user::before,
+    .title_user::after{
+       
+        width: 100px;
+        
+    }
+}
+
+@media (max-width: 400px) {
+    .info__descripcion{
+        width: 300px;
+    }
+    .jzdbox1 {
+        width: 280px;
+    }
+    .info__title{
+        font-size: 18px;
+    }
+    .flexvideo h2{
+        display: none;
+    }
+    .title_user::before,
+    .title_user::after{
+       
+        width: 25px;
+        
+    }
+}
+}   
