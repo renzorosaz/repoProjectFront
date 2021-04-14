@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Librería de Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <!-- Bootstrap 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- HOJA DE ESTILO -->
+    <link rel="stylesheet" href="vistaEntrenador-Nutricionista.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-bar ">
+        <a class="navbar-brand text-white" href="#">My<span>MFT H4L</span> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse items-navbar " id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto lista-navbar ">
+                <li class="nav-item active">
+                    <a class="nav-link btn__inicio" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Nosotros <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Entrenadores <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Acceso <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="wrapper">
+        <section class="wrapper__clienteInfo">
+            <h2 class="title__cliente">Profesional My<span>MFT H4L</span></h2>
+            <figure class="imagen__cliente">
+                <img src="imagenes-jramosl/user-profesional.jpg" alt="" />
+            </figure>
+            <div class="cliente__info">
+                <p><i class="fas fa-user-circle fa-2x   "></i></p>
+                <u> NOM<span>BRE</span></u>
+            </div>
+            <p>Marco</p>
+            <div class="cliente__info">
+                <p><i class="fas fa-bars  fa-2x  "></i> </p>
+                <u><span> APEL</span>LIDO</u>
+            </div>
+            <p>Barca Prado</p>
+            <div class="cliente__info">
+                <p><i class="fas fa-envelope fa-2x   "></i> </p>
+                <u>COR<span>REO</span> </u>
+            </div>
+            <p>Mbarca@gmail.com</p>
+            <div class="cliente__info">
+                <p><i class="fas fa-portrait fa-2x"></i></p>
+                <u>PROFE<span>SIÓN</span> </u>
+            </div>
+            <p>Personal Trainer</p>
+            <div>
+                <button>Editar Perfil</button>
+            </div>
+            <div>
+                <button>Cambiar contraseña</button>
+            </div>
+        </section>
+        <section class="wrapper__citasCliente">
+            <h2 class="title__citas"> MI <span>CUENTA</span> </h2>
+            <div class="btns1">
+                <button>Ver Clientes </button>
+                <button><a href="vistaEntrenador-Nutricionista-DISPONIBILIDAD.html"> Agregar disponibilidad</a></button>
+            </div>
+            <div class="btn2">
+                <button><a href="vistaEntrenador-Nutricionista-CITAS.html">Ver calendario de citas</a> </button>
+            </div>
+            <h3><u>Disponibilidad</u></h3>
+            <div class="calender">
+                <input type="date" class="input__date">
+                <figure class="imagen__calendario">
+                    <img src="http://placehold.it/450X350/000/000" alt="">
+                </figure>
+            </div>
+            <div class="btns3">
+                <button>Agregar</button>
+                <button>Eliminar</button>
+            </div>
+
+        </section>
+    </div>
+    <footer class="footer"> <p> MyMFT H4L </p></footer>
+
+
+    <!-- scripts de bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
