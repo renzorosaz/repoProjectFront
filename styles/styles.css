@@ -63,3 +63,39 @@ padding:0;
 .div__btn{
     gap: 100px;
 }
+.img__form{
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+}
+.div__form{
+    height: 92.3vh;
+
+}
+a{
+    transition: 0.3s;
+    
+}
+.btn:hover{
+    background-color: #FEC600;
+}
+@media (max-width:982px) {
+    .col__img{
+        visibility: hidden;
+    }
+    .row__imgform{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 767px) 
+{
+    .formu{
+        padding: 10px;
+        height: auto;
+    } 
+}
+
+
