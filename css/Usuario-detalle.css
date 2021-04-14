@@ -6,7 +6,7 @@ font-family: sans-serif;
 }
 body{
    /* background-color: rgb(85, 85, 85); */
-   background-image: url(imagenes-jramosl/textura-oxidadaa.png);
+   background-image: url(./../imagenes-jramosl/textura-oxidadaa.png);
 }
 span{
     color:  #FEC600;
