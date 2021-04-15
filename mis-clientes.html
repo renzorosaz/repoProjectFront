@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegir profesional</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/mis-clientes.css">
+    <style>
+        .contenidos__title {
+            color: #EEEEEE;
+            text-align: center;
+        }
+
+        .yellow {
+            color: #FEC600;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark nav-bar">
+            <a class="navbar-brand text-white" href="#">My<span class="yellow">MFT H4L</span> </a>
+
+            <div class="collapse navbar-collapse items-navbar " id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto lista-navbar ">
+                    <li class="nav-item active">
+                        <a class="nav-link btn__inicio" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Contáctenos</a>
+                    </li>
+                </ul>
+                <form class="d-flex align-items-center input-group w-auto mr-3">
+
+                    <button class="btn btn-buscar"><i class="fa fa-search" aria-hidden="true"
+                            style="color: #ffff; padding-right: 25px;"></i></button>
+                    <input type="search" class="form-control" placeholder="Ingrese su Búsqueda" aria-label="Search" />
+
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="sidebar">
+                    <div class="sidebar__datosPersonales">
+                        <h4 class="contenidos__title mb-4">Profesional My<span class="yellow">MFT H4L</span></h4>
+
+                        <figure class="figura__card mb-5">
+                            <img src="./img/card_image.png" alt="" class="card-img-top">
+                        </figure>
+                        <div class="card-body">
+
+                            <h4 class="card-title"><i class="fa fa-user" aria-hidden="true"
+                                    style="margin-right: 20px;"></i> NOM<span class="yellow">BRE</span></h4>
+                            <p class="card-text">
+                                Adriana Gómez
+                            </p>
+                            <h4 class="card-title"><i class="fa fa-align-justify" aria-hidden="true"
+                                    style="margin-right: 20px;"></i> APEL<span class="yellow">LIDO</span></h4>
+                            <p class="card-text">
+                                Sánchez Bengoa
+                            </p>
+                            <h4 class="card-title"></i><i class="fa fa-envelope" aria-hidden="true"
+                                    style="margin-right: 20px;"></i> COR<span class="yellow">REO</span></h4>
+                            <p class="card-text">
+                                Brianna@gmail.com
+                            </p>
+                            <h4 class="card-title"></i><i class="fa fa-university" aria-hidden="true"
+                                    style="margin-right: 20px;"></i> PROFE<span class="yellow">SIÓN</span></h4>
+                            <p class="card-text">
+                                Personal Trainer
+                            </p>
+                            <div class="botones">
+                                <button type="button" class="btn btn-warning"><i class="fa fa-download iconno"
+                                        aria-hidden="true"></i>Editar Perfil</button>
+                                <button type="button" class="btn btn-warning"><i class="fa fa-times-circle iconno"
+                                        aria-hidden="true"></i> Cambiar Contraseña</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-6">
+                <div class="contenidos">
+                    <div class="sidebar__contenidos"  style="overflow-y: auto;">
+                        <h1 class="contenidos__title mb-4">MI <span class="yellow">CUENTA</span></h1>
+                        <ul class="nav nav-pills nav-fill mb-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Ver Clientes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">Ver Citas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Agregar Disponibilidad</a>
+                            </li>
+
+                        </ul>
+                        <h2 class="contenidos__title"> MIS <span class="yellow">CLIENTES</span> </h2>
+
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="./img/card_cliente.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+
+                                        <h4 class="card-title">NOM<span class="yellow">BRE</span></h4>
+                                        <p class="card-text">
+                                            Adriana Gómez
+                                        </p>
+                                        <h4 class="card-title">DÍA<span class="yellow"> D</span>E <span
+                                                class="yellow">CITA</span></h4>
+                                        <p class="card-text">
+                                            10 - 05 - 2021
+                                        </p>
+                                        <h4 class="card-title"></i> HO<span class="yellow">RA</span></h4>
+                                        <p class="card-text">
+                                            08:00 am
+                                        </p>
+                                        <button type="button" class="btn btn-warning">Ver Perfil</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="./img/card_cliente2.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+
+                                        <h4 class="card-title">NOM<span class="yellow">BRE</span></h4>
+                                        <p class="card-text">
+                                            Adriana Gómez
+                                        </p>
+                                        <h4 class="card-title">DÍA<span class="yellow"> D</span>E <span
+                                                class="yellow">CITA</span></h4>
+                                        <p class="card-text">
+                                            12 - 05 - 2021
+                                        </p>
+                                        <h4 class="card-title"></i> HO<span class="yellow">RA</span></h4>
+                                        <p class="card-text">
+                                            10:00 am
+                                        </p>
+                                        <button type="button" class="btn btn-warning">Ver Perfil</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="./img/card_cliente3.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+
+                                        <h4 class="card-title">NOM<span class="yellow">BRE</span></h4>
+                                        <p class="card-text">
+                                            Jorge Murillo
+                                        </p>
+                                        <h4 class="card-title">DÍA<span class="yellow"> D</span>E <span
+                                                class="yellow">CITA</span></h4>
+                                        <p class="card-text">
+                                            19 - 05 - 2021
+                                        </p>
+                                        <h4 class="card-title"></i> HO<span class="yellow">RA</span></h4>
+                                        <p class="card-text">
+                                            18:00 pm
+                                        </p>
+                                        <button type="button" class="btn btn-warning">Ver Perfil</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="./img/card_cliente4.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+
+                                        <h4 class="card-title">NOM<span class="yellow">BRE</span></h4>
+                                        <p class="card-text">
+                                            Jorge Murillo
+                                        </p>
+                                        <h4 class="card-title">DÍA<span class="yellow"> D</span>E <span
+                                                class="yellow">CITA</span></h4>
+                                        <p class="card-text">
+                                            19 - 05 - 2021
+                                        </p>
+                                        <h4 class="card-title"></i> HO<span class="yellow">RA</span></h4>
+                                        <p class="card-text">
+                                            18:00 pm
+                                        </p>
+                                        <button type="button" class="btn btn-warning">Ver Perfil</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="./img/card_cliente5.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+
+                                        <h4 class="card-title">NOM<span class="yellow">BRE</span></h4>
+                                        <p class="card-text">
+                                            Jorge Murillo
+                                        </p>
+                                        <h4 class="card-title">DÍA<span class="yellow"> D</span>E <span
+                                                class="yellow">CITA</span></h4>
+                                        <p class="card-text">
+                                            19 - 05 - 2021
+                                        </p>
+                                        <h4 class="card-title"></i> HO<span class="yellow">RA</span></h4>
+                                        <p class="card-text">
+                                            18:00 pm
+                                        </p>
+                                        <button type="button" class="btn btn-warning">Ver Perfil</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="./img/card_cliente6.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+
+                                        <h4 class="card-title">NOM<span class="yellow">BRE</span></h4>
+                                        <p class="card-text">
+                                            Jorge Murillo
+                                        </p>
+                                        <h4 class="card-title">DÍA<span class="yellow"> D</span>E <span
+                                                class="yellow">CITA</span></h4>
+                                        <p class="card-text">
+                                            19 - 05 - 2021
+                                        </p>
+                                        <h4 class="card-title"></i> HO<span class="yellow">RA</span></h4>
+                                        <p class="card-text">
+                                            18:00 pm
+                                        </p>
+                                        <button type="button" class="btn btn-warning">Ver Perfil</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="./img/card_cliente7.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+
+                                        <h4 class="card-title">NOM<span class="yellow">BRE</span></h4>
+                                        <p class="card-text">
+                                            Jorge Murillo
+                                        </p>
+                                        <h4 class="card-title">DÍA<span class="yellow"> D</span>E <span
+                                                class="yellow">CITA</span></h4>
+                                        <p class="card-text">
+                                            19 - 05 - 2021
+                                        </p>
+                                        <h4 class="card-title"></i> HO<span class="yellow">RA</span></h4>
+                                        <p class="card-text">
+                                            18:00 pm
+                                        </p>
+                                        <button type="button" class="btn btn-warning">Ver Perfil</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <img src="./img/card_cliente8.jpg" alt="" class="card-img-top">
+                                    <div class="card-body">
+
+                                        <h4 class="card-title">NOM<span class="yellow">BRE</span></h4>
+                                        <p class="card-text">
+                                            Jorge Murillo
+                                        </p>
+                                        <h4 class="card-title">DÍA<span class="yellow"> D</span>E <span
+                                                class="yellow">CITA</span></h4>
+                                        <p class="card-text">
+                                            19 - 05 - 2021
+                                        </p>
+                                        <h4 class="card-title"></i> HO<span class="yellow">RA</span></h4>
+                                        <p class="card-text">
+                                            18:00 pm
+                                        </p>
+                                        <button type="button" class="btn btn-warning">Ver Perfil</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <div class="card-footer">
+                <div class="footer__contacto">
+                    <p style="text-align: center;">Contacto</p>
+                    <p><i class="fa fa-envelope" aria-hidden="true"></i> m4hl@gmail.com</p>
+                    <p><i class="fas fa-phone    "></i> +51 958478542</p>
+                </div>
+                <div class="footer__logo">
+                    <p>MFTH4L</p>
+                </div>
+                <div class="footer__social">
+                    <i class="fab fa-facebook    "></i>
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    <i class="fab fa-twitter" aria-hidden="true"></i>
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
