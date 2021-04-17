@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
     <title>Document</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light text-white navbar__princi sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light text-white navbar__princi sticky-top d-flex justify-content-end">
         <a class="navbar-brand text-white" href="#">My<span class="text-warning">MFT H4L</span> </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,20 +28,20 @@
         <div class="collapse navbar-collapse div__main" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto d-flex ul__princi">
                 <li class="nav-item active">
-                    <button class="nav-link text-white btn__link" href="#">INICIO<span
+                    <button class="nav-link text-white btn__link btn__nav" href="#">INICIO<span
                             class="sr-only ">(current)</span></button>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">NOSOTROS</a>
+                    <a class="nav-link text-white btn" href="#">NOSOTROS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">ENTRENADORES</a>
+                    <a class="nav-link text-white btn" href="#">ENTRENADORES</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">INGRESAR</a>
+                    <a class="nav-link text-white btn" href="#">INGRESAR</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">REGISTRARSE</a>
+                    <a class="nav-link text-white btn" href="registroCliente.html">REGISTRARSE</a>
                 </li>
 
             </ul>
@@ -56,8 +58,8 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <span class="align-top">Muay Thai</span>
                             <img src="imagenes/muaytai.jpg" alt="">
+                            
                         </div>
                         <div class="swiper-slide">
                             <span>Muay Thai</span>
@@ -79,65 +81,79 @@
                     <div class="swiper-scrollbar"></div>
                 </div>
             </section>
-            <h2 class="text-xl-center pt-3 pb-3 text-white">NUESTRAS ESPECIALIDADES</h2>
-            <div class="row mb-3">
+            <h2 class="text-xl-center pt-3 pb-3 text-white">NUESTRAS PROFESIONALES</h2>
+            <div class="row mb-4">
                 <div class="col-6 col-md-4 d-flex justify-content-center carta">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="imagenes/nutri.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Jorge Lazo</h5>
-                            <p class="card-text">Rating: <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
-                            <p class="card-text">Especialidad: Brazos</p>
-                            <a href="#" class="btn btn-warning">Ver horarios</a>
+                    <div class="carta__pro">
+                        <div class="card" style="width: 18rem; min-height: 16.5cm;">
+                            <img class="card-img-top" src="imagenes/nutri.jpg" alt="Card image cap">
+                            <div class="card-body body__card">
+                                <h5 class="card-title text-center">Jorge Lazo</h5>
+                                <p class="card-text">Rating: <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                        class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                </p>
+                                <p class="card-text">Especialidad: Brazos</p>
+                                <a href="#" class="btn btn-warning">Ver horarios</a>
+                            </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-6 col-md-4 d-flex justify-content-center carta">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="imagenes/entrenador.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Victor Silva</h5>
-                            <p class="card-text">Rating: <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
-                            <p class="card-text">Especialidad: Nutricionista</p>
-                            <a href="#" class="btn btn-warning">Ver horarios</a>
+                    <div class="carta__pro">
+                        <div class="card" style="width: 18rem; min-height: 16.5cm;">
+                            <img class="card-img-top" src="imagenes/entrenador.jpg" alt="Card image cap">
+                            <div class="card-body body__card">
+                                <h5 class="card-title text-center">Victor Silva</h5>
+                                <p class="card-text">Rating: <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                        class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                </p>
+                                <p class="card-text">Especialidad: Nutricionista</p>
+                                <a href="#" class="btn btn-warning">Ver horarios</a>
+                            </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-6 col-md-4 d-flex justify-content-center carta">
-                    <div class="card" style="width: 18rem;">    
-                        <img class="card-img-top" src="imagenes/entrenadora.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title text-center">Olenka Sánchez</h5>
-                            <p class="card-text">Rating: <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i></p>
-                            <p class="card-text">Especialidad: Piernas</p>
-                            <a href="#" class="btn btn-warning text-center">Ver horarios</a>
+                    <div class="carta__pro">
+                        <div class="card" style="width: 18rem; min-height: 16.5cm;">
+                            <img class="card-img-top" src="imagenes/entrenadora.jpg" alt="Card image cap">
+                            <div class="card-body body__card">
+                                <h5 class="card-title text-center">Olenka Sánchez</h5>
+                                <p class="card-text">Rating: <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i
+                                        class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                                </p>
+                                <p class="card-text">Especialidad: Piernas</p>
+                                <a href="#" class="btn btn-warning text-center">Ver horarios</a>
+                            </div>
                         </div>
                     </div>
-                    
+
                 </div>
 
             </div>
 
 
         </div>
+        <footer class="d-flex justify-content-between container-fluid align-items-center footer__sty">
+            <section class="ml-5 d-flex flex-column justify-content-lg-center">
+                <p class="text-lg-center">Contacto</p>
+                <p class="email"><i class="far fa-envelope"></i> mfthabits4life@gmail.com</p>
+                <p class="tele"><i class="fas fa-phone-alt"></i> +51 987 654 321</p>
+            </section>
+            <section>
+                <a class="navbar-brand text-white footer__myft" href="#">My<span class="text-warning">MFT H4L</span>
+                </a>
+            </section>
+            <section class="mr-5 redes_soci">
+                <a class="navbar-brand text-white" href="https://twitter.com/home?lang=es"><i class="fab fa-twitter"></i></a>
+                <a class="navbar-brand text-white" href="https://www.instagram.com/?hl=es-la"><i class="fab fa-instagram"></i></a>
+                <a class="navbar-brand text-white" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            </section>
+        </footer>
     </main>
-    <footer class="d-flex justify-content-between container-fluid align-items-center">
-        <section class="ml-5">
-            <p class="text-lg-center">Contacto</p>
-            <p class="email"><i class="far fa-envelope"></i> mfthabits4life@gmail.com</p>
-            <p class="tele"><i class="fas fa-phone-alt"></i> +51 987 654 321</p>
-        </section>
-        <section>
-            <a class="navbar-brand text-dark footer__myft" href="#">My<span class="text-warning">MFT H4L</span> </a>
-        </section>
-        <section class="mr-5 redes_soci">
-            <p><i class="fab fa-twitter"></i></p>
-            <p><i class="fab fa-instagram"></i></p>
-            <p><i class="fab fa-facebook"></i></p>
-        </section>
-    </footer>
+
 
 
 
